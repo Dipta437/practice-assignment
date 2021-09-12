@@ -11,7 +11,7 @@
     <main class="container mx-auto px-4 md:px-2">
         <div class="grid grid-cols-2">
             <!-- image -->
-            <div class="p-5 mx-auto">
+            <div class="p-5 mx-auto w-full md:w-50">
                 <img src="images/mac.png" alt="">
             </div>
             <!-- Custom style  -->
@@ -21,15 +21,15 @@
                 }
             </style>
 
-            <div class="p-5 mx-5">
+            <div class="p-5 mx-5 ">
                 <h1 class="text-2xl font-bold">Customize Your Blue 24-inch Imac With Apple M1 Chip.</h1>
                 <p class="mt-4">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16-core neural Engine 8GB unified Ram 256GB SSD storage, Two thunderbolt/USB 4 ports, Magic Mouse, Magic Keyboard-US English.</p>
                 <div class="mt-6">
                     <h2 class="font-bold">RAM</h2>
                 </div>
                 <div>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">8GB Unified Ram</button>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">16GB Unified Ram</button>
+                    <button class="border border-2 rounded-md p-2 bg-green-500 text-white hover:bg-gray-600 w-16 md:w-32 lg:w-48">8GB Unified Ram</button>
+                    <button class="border border-2 rounded-md p-2 bg-green-500 text-white hover:bg-gray-600">16GB Unified Ram</button>
                 </div>
                 <div class="mt-6">
                     <h2 class="font-bold">STORAGE</h2>
@@ -46,11 +46,46 @@
                     <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">Friday,Sept 12 Free Prime Deliver</button>
                     <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">Friday,Sept 19 Delivery Charge $20</button>
                 </div>
+                <div class="divide-y-2 divide-gray-200">
+                    <div class="flex space-x-16 grid grid-cols-2">
+                        <p class="mt-10 font-bold">Best Price</p>
+                        <p class="mt-10 font-bold">$1299</p>
+                    </div>
+                    <div class="flex space-x-16 grid grid-cols-2">
+                        <p class="mt-10 font-bold">Extra Ram Cost</p>
+                        <p class="mt-10 font-bold">$0</p>
+                    </div>
+                    <div class="flex space-x-16 grid grid-cols-2">
+                        <p class="mt-10 font-bold">Extra Storsge Cost</p>
+                        <p class="mt-10 font-bold">$0</p>
+                    </div>
+                    <div class="flex space-x-16 grid grid-cols-2">
+                        <p class="mt-10 font-bold">Delivery Charge</p>
+                        <p class="mt-10 font-bold">$0</p>
+                        </div>
+                        <div class="flex space-x-16 grid grid-cols-2">
+                            <p class="mt-2 font-bold">Total Price</p>
+                            <p class="mt-2 font-bold">$1299</p>
+                        </div>  
+                        <div class="mt-10"> 
+                            <div>
+                                <p class="mt-4 font-semibold">Add Promo Code</p>
+                            </div>
+                            <div>
+                                <input type="text" class="border border-4 border-gray-400 rounded p-2">
+                                <button class="border border-2 rounded-md p-2 bg-blue-500 text-white hover:bg-green-600">Apply Promo Code</button>
+                            </div>
+                        </div>
+                </div>  
             </div>
             
         </div>
 
     </main>
+    <div class="flex grid-cols-2 justify-center">
+        <p class="text-4xl font-semibold">Total:</p>
+        <p class="text-4xl font-semibold">$1299</p>
+    </div>
     <script src="js/pract.js"></script>
 </body>
 </html>
