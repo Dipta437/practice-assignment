@@ -28,44 +28,45 @@
                     <h2 class="font-bold">RAM</h2>
                 </div>
                 <div>
-                    <button class="border border-2 rounded-md p-2 bg-green-500 text-white hover:bg-gray-600 w-16 md:w-32 lg:w-48">8GB Unified Ram</button>
-                    <button class="border border-2 rounded-md p-2 bg-green-500 text-white hover:bg-gray-600">16GB Unified Ram</button>
+                    <button id="firstRam" class="border border-2 rounded-md p-2 bg-green-500 text-white hover:bg-gray-600 w-16 md:w-32 lg:w-48">8GB Unified Ram</button>
+                    <button id="secondRam" class="border border-2 rounded-md p-2 bg-green-500 text-white hover:bg-gray-600">16GB Unified Ram</button>
                 </div>
                 <div class="mt-6">
                     <h2 class="font-bold">STORAGE</h2>
                 </div>
                 <div>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">256GB SSD storage</button>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">512GB SSD storage</button>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">1TB SSD storage</button>
+                    <button id="firstStorage" class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">256GB SSD storage</button>
+                    <button id="secondStorage" class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">512GB SSD storage</button>
+                    <button id="thirdStorage" class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">1TB SSD storage</button>
                 </div>
                 <div class="mt-6">
                     <h2 class="font-bold">Choose Your Delivery Options</h2>
                 </div>
                 <div>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">Friday,Sept 12 Free Prime Deliver</button>
-                    <button class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">Friday,Sept 19 Delivery Charge $20</button>
+                    <button id="firstShippingCharge" class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">Friday,Sept 12 Free Prime Deliver</button>
+                    <button id="secondShippingCharge" class="border border-2 rounded-md p-3 bg-green-500 text-white hover:bg-gray-600">Friday,Sept 19 Delivery Charge $20</button>
                 </div>
                 <div class="divide-y-2 divide-gray-200">
                     <div class="flex space-x-16 grid grid-cols-2">
                         <p class="mt-10 font-bold">Best Price</p>
-                        <p class="mt-10 font-bold">$1299</p>
+                        <p id="fixedPrice" class="mt-10 font-bold">1299</p>
                     </div>
                     <div class="flex space-x-16 grid grid-cols-2">
                         <p class="mt-10 font-bold">Extra Ram Cost</p>
-                        <p class="mt-10 font-bold">$0</p>
+                        <p id="firstRamPrice" class="mt-10 font-bold">$0</p>
                     </div>
                     <div class="flex space-x-16 grid grid-cols-2">
                         <p class="mt-10 font-bold">Extra Storsge Cost</p>
-                        <p class="mt-10 font-bold">$0</p>
+                        <p id="additionalStoragePrice" class="mt-10 font-bold">$0</p>
                     </div>
                     <div class="flex space-x-16 grid grid-cols-2">
                         <p class="mt-10 font-bold">Delivery Charge</p>
-                        <p class="mt-10 font-bold">$0</p>
+                        <p id="shippingCost" class="mt-10 font-bold">$0</p>
                         </div>
+                        <hr class="line">
                         <div class="flex space-x-16 grid grid-cols-2">
                             <p class="mt-2 font-bold">Total Price</p>
-                            <p class="mt-2 font-bold">$1299</p>
+                            <p id="baseTotal" class="mt-2 font-bold">1299</p>
                         </div>  
                         <div class="mt-10"> 
                             <div>
@@ -73,7 +74,7 @@
                             </div>
                             <div>
                                 <input type="text" class="border border-4 border-gray-400 rounded p-2">
-                                <button class="border border-2 rounded-md p-2 bg-blue-500 text-white hover:bg-green-600">Apply Promo Code</button>
+                                <button class="border border-2 rounded-md p-2 bg-blue-500 text-white hover:bg-green-600">Apply</button>
                             </div>
                         </div>
                 </div>  
@@ -82,9 +83,10 @@
         </div>
 
     </main>
-    <div class="flex grid-cols-2 justify-center">
+    <hr>
+    <div class="mt-4 flex grid-cols-2 justify-center">
         <p class="text-4xl font-semibold">Total:</p>
-        <p class="text-4xl font-semibold">$1299</p>
+        <p id="finalTotal" class="text-4xl font-semibold">$1299</p>
     </div>
     <script src="js/pract.js"></script>
 </body>
