@@ -49,6 +49,9 @@ button7.addEventListener("click", function(){
     shippingCost.innerText = "20";
     updateTotal();
 })
+promoButton.addEventListener("click", function(){
+    updateTotal();
+})
 
     
 
@@ -65,14 +68,12 @@ button7.addEventListener("click", function(){
 
         finalTotal.innerText = totalPrice;
         
-    
-        
-        
-       
-        
-        
-
-    
-        
-        
+        const promoFieldValue = promoCode.value;
+        if (promoFieldValue == 'stevekaku'){
+            const promoDiscount = parseInt(totalPrice / 100) * 20;
+            const finalDiscount = totalPrice - promoDiscount;
+            finalTotal.innerText = finalDiscount;
+        }
+        promoCode.value = '';
     }
+    
